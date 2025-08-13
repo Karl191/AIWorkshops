@@ -38,18 +38,18 @@ const Header = () => {
             >
               Workshops
             </button>
-            <button
-              onClick={() => scrollToSection('benefits')}
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-            >
-              Fördelar
-            </button>
-            <button
-              onClick={() => scrollToSection('cases')}
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-            >
-              Case
-            </button>
+            {/*<button*/}
+            {/*  onClick={() => scrollToSection('benefits')}*/}
+            {/*  className="text-sm font-medium text-foreground hover:text-accent transition-colors"*/}
+            {/*>*/}
+            {/*  Fördelar*/}
+            {/*</button>*/}
+            {/*<button*/}
+            {/*  onClick={() => scrollToSection('cases')}*/}
+            {/*  className="text-sm font-medium text-foreground hover:text-accent transition-colors"*/}
+            {/*>*/}
+            {/*  Case*/}
+            {/*</button>*/}
             <Button
               onClick={() => scrollToSection('contact')}
               variant="cta"
