@@ -124,7 +124,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-accent" />
                 <a href="mailto:hello@aiworkshops.se" className="hover:text-accent transition-colors">
-                  hello@aiworkshops.se
+                  info@aiworkshops.se
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -136,8 +136,7 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-accent mt-0.5" />
                 <div>
-                  Stureplan 4<br />
-                  114 35 Stockholm<br />
+                  Stockholm<br />
                   Sverige
                 </div>
               </div>
