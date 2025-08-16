@@ -100,7 +100,7 @@ const Workshops = () => {
   };
 
   return (
-    <section id="workshops" className="py-24 bg-background">
+    <section id="workshops" className="py-24 bg-gradient-subtle">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -172,7 +172,7 @@ const Workshops = () => {
         </div>
 
         <div className="text-center mt-16">
-          <div className="bg-gradient-subtle p-8 rounded-2xl border border-border">
+          <div className="bg-white p-8 rounded-2xl border border-border">
             <h3 className="text-2xl font-semibold mb-4">
               Inte säker på vilken workshop som passar bäst?
             </h3>
