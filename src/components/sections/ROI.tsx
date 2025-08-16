@@ -3,6 +3,14 @@ const ROI = () => {
     <section id="benefits" className="py-24 bg-gradient-subtle">
 {/* ROI Section */}
       <div className="container mx-auto px-4 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            Konkreta <span className="text-accent">fördelar</span> för ert företag
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Våra kunder rapporterar både effektivisering och ökad tillväxt efter att ha implementerat AI-verktyg.
+          </p>
+        </div>
         <div className="bg-primary text-primary-foreground rounded-2xl p-8 lg:p-12">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
