@@ -19,27 +19,27 @@ const Footer = () => {
               genom beprövade AI-lösningar.
             </p>
             <div className="flex space-x-4">
-              <a 
+              {/* <a 
                 href="https://linkedin.com/company/aiworkshops" 
                 className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-accent transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
+              </a> */}
               <a 
-                href="https://twitter.com/aiworkshops" 
+                href="https://twitter.com/aiworkshopsse" 
                 className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-accent transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a 
+              {/* <a 
                 href="https://aiworkshops.se/blog" 
                 className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-accent transition-colors"
                 aria-label="Blogg"
               >
                 <Globe className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
