@@ -19,27 +19,27 @@ const Footer = () => {
               genom beprövade AI-lösningar.
             </p>
             <div className="flex space-x-4">
-              <a 
+              {/* <a 
                 href="https://linkedin.com/company/aiworkshops" 
                 className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-accent transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
+              </a> */}
               <a 
-                href="https://twitter.com/aiworkshops" 
+                href="https://twitter.com/aiworkshopsse" 
                 className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-accent transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a 
+              {/* <a 
                 href="https://aiworkshops.se/blog" 
                 className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-accent transition-colors"
                 aria-label="Blogg"
               >
                 <Globe className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -89,17 +89,17 @@ const Footer = () => {
                   Fördelar & ROI
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#cases" className="hover:text-accent transition-colors">
                   Kundcase & Resultat
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#contact" className="hover:text-accent transition-colors">
                   Kostnadsfri konsultation
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/blog" className="hover:text-accent transition-colors">
                   AI-nyheter & Insikter
                 </a>
@@ -113,7 +113,7 @@ const Footer = () => {
                 <a href="/karriar" className="hover:text-accent transition-colors">
                   Karriär
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -127,16 +127,16 @@ const Footer = () => {
                   info@aiworkshops.se
                 </a>
               </div>
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-accent" />
                 <a href="tel:+4681234567" className="hover:text-accent transition-colors">
                   08-123 456 789
                 </a>
-              </div>
+              </div> */}
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-accent mt-0.5" />
                 <div>
-                  Stockholm<br />
+                  Jönköping<br />
                   Sverige
                 </div>
               </div>
@@ -158,7 +158,7 @@ const Footer = () => {
               © {currentYear} AI Workshops. Alla rättigheter förbehållna.
             </div>
             
-            <div className="flex flex-wrap gap-6 text-sm text-primary-foreground/60">
+            {/* <div className="flex flex-wrap gap-6 text-sm text-primary-foreground/60">
               <a href="/integritetspolicy" className="hover:text-accent transition-colors">
                 Integritetspolicy
               </a>
@@ -171,15 +171,15 @@ const Footer = () => {
               <a href="/gdpr" className="hover:text-accent transition-colors">
                 GDPR
               </a>
-            </div>
+            </div> */}
           </div>
           
-          <div className="mt-4 pt-4 border-t border-primary-foreground/10">
+          {/* <div className="mt-4 pt-4 border-t border-primary-foreground/10">
             <p className="text-xs text-primary-foreground/40 text-center">
               Organisationsnummer: 556XXX-XXXX | Momsregistrerat | 
               Auktoriserad utbildningsanordnare enligt Skolverket
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

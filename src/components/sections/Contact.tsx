@@ -74,11 +74,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">E-post</div>
-                  <div className="text-muted-foreground">hello@aiworkshops.se</div>
+                  <div className="text-muted-foreground">info@aiworkshops.se</div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <div className="p-3 bg-accent-muted rounded-lg">
                   <Phone className="h-5 w-5 text-accent" />
                 </div>
@@ -86,9 +86,9 @@ const Contact = () => {
                   <div className="font-semibold">Telefon</div>
                   <div className="text-muted-foreground">08-123 456 789</div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <div className="p-3 bg-accent-muted rounded-lg">
                   <MapPin className="h-5 w-5 text-accent" />
                 </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                     114 35 Stockholm
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-accent-muted rounded-lg">
