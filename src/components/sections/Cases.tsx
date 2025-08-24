@@ -120,7 +120,7 @@ const Cases = () => {
                     <Quote className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <blockquote className="text-sm text-muted-foreground italic mb-2">
-                        "{caseStudy.quote}"
+                        &quot;{caseStudy.quote}&quot;
                       </blockquote>
                       <cite className="text-xs font-medium text-foreground">
                         {caseStudy.person}

@@ -1,6 +1,9 @@
+'use client'
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, Zap } from "lucide-react";
 import heroImage from "@/assets/ai-workshop-hero.jpg";
+import Image from "next/image"
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -86,10 +89,11 @@ const Hero = () => {
           {/* Image */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <img
+              <Image
                 src={heroImage}
                 alt="Professionella AI-workshops för företag"
                 className="w-full h-auto object-cover"
+                priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
             </div>
