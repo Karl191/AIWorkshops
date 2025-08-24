@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   description:
     'Professionella workshops för praktisk implementation av AI-verktyg inom marknadsföring, försäljning, produktutveckling och administration. Effektivisera era processer med AI.',
   alternates: { canonical: '/' },
-  themeColor: '#000000',
   openGraph: {
     title: 'AI Workshops för Företag – Praktisk Implementation',
     description:
