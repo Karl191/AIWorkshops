@@ -7,14 +7,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aiworkshops.se'),
-  title: 'AI Workshops för Företag – Praktisk Implementation av AI-verktyg',
-  description:
-    'Professionella workshops för praktisk implementation av AI-verktyg inom marknadsföring, försäljning, produktutveckling och administration. Effektivisera era processer med AI.',
-  alternates: { canonical: '/' },
+  title: 'AI workshops för företag | Träning i AI för ert team',
+  description: 'Boka AI workshops för företag. Vi tränar ert team i att använda AI för marknadsföring, försäljning, produktutveckling och administration – med resultat som märks.',
+  alternates: { canonical: 'https://aiworkshops.se' },
   openGraph: {
-    title: 'AI Workshops för Företag – Praktisk Implementation',
-    description:
-      'Professionella workshops för praktisk implementation av AI-verktyg. Effektivisera era processer med AI.',
+    title: 'AI workshops för företag | Träning i AI för ert team',
+    description: 'Boka AI workshops för företag och lär ert team använda AI i arbetet. Effektivisera marknadsföring, försäljning och administration.',
     type: 'website',
     url: '/',
     siteName: 'AI Workshops',
@@ -22,9 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Workshops för Företag – Praktisk Implementation',
-    description:
-      'Professionella workshops för praktisk implementation av AI-verktyg.',
+    title: 'AI workshops för företag | Träning i AI för ert team',
+    description: 'AI workshops för företag – lär ert team använda AI i arbetet. Från teori till praktik.',
     images: ['/og-image.png'],
   },
   icons: {
