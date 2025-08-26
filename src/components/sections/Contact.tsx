@@ -11,7 +11,9 @@ import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
 import Form from "@/components/sections/Form";
 
-const Contact = () => {
+const Contact = ({ 
+  isStartPage = false
+}) => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -54,8 +56,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-subtle">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section id="contact" className={`${isStartPage ? "bg-gradient-subtle py-24" : "py-16"} sm:py-24`}>
+      <div className={`${isStartPage ? "container mx-auto px-4 lg:px-8" : ""}`}>
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Column - Contact Info */}
           <div className="space-y-8">

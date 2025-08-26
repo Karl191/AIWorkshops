@@ -10,12 +10,11 @@ import Footer from "@/components/sections/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <main>
         <Hero />
         <Workshops />
         <ROI />
-        <Contact />
+        <Contact isStartPage={true} />
       </main>
       <Footer />
     </div>
