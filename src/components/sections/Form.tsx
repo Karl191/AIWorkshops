@@ -4,24 +4,13 @@ import { useState, FormEvent } from "react";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
 import { toast } from "@/components/ui/sonner";
 
-export default function QuoteRequestForm() {
+type FormProps = {
+  onSubmit: (e: React.FormEvent<HTMLFormElement>) => void | Promise<void>;
+  className?: string;
+};
+
+export default function Form({ onSubmit, className }: FormProps) {
   const [submitting, setSubmitting] = useState(false);
-
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSubmitting(true);
-
-    const data = Object.fromEntries(new FormData(e.currentTarget).entries());
-    // TODO: send `data` to your API
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    toast("Tack för din förfrågan!", {
-    description: "Vi kontaktar dig så snart som möjligt för att diskutera era behov.",
-    });
-
-    setSubmitting(false);
-    (e.target as HTMLFormElement).reset(); // reset form
-  }
 
   return (
     <section className="shadow-xl border-0 mx-auto max-w-4xl rounded-2xl bg-white p-6 ring-1 ring-black/5 md:p-8">
