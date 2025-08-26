@@ -1,15 +1,18 @@
 import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 const pages = [
-  "/", 
+  "/",
   "/ai-workshop-marknadsforing",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return pages.map((path) => ({
-    url: `https://aiworkshops.se${path}`,
-    lastModified: new Date(),
+  const now = new Date();
+  return pages.map((p) => ({
+    url: `https://aiworkshops.se${p}`,
+    lastModified: now,
     changeFrequency: "monthly",
-    priority: path === "/" ? 1 : 0.8,
+    priority: p === "/" ? 1 : 0.8,
   }));
 }
