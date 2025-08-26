@@ -28,13 +28,11 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                Transformera ert företag med{" "}
-                <span className="text-gradient">AI-workshops</span>
+                <span className="text-gradient">AI-workshops {" "}</span>
+                för företag och organisationer
               </h1>
               <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl">
-                Praktisk implementation av tillgängliga AI-verktyg för marknadsföring, 
-                försäljning, produktutveckling och administration. Effektivisera era 
-                processer och öka innovationstakten.
+Vi hjälper företag att omsätta AI från teori till praktik. I våra AI workshops får ert team träning i hur AI kan stärka marknadsföring, försäljning, produktutveckling och administration – med fokus på resultat som märks i verksamheten.
               </p>
             </div>
 
