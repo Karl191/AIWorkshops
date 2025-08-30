@@ -4,7 +4,6 @@ export const dynamic = "force-static";
 
 const pages = [
   "/",
-  "/ai-workshop-marknadsforing",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
