@@ -1,28 +1,26 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
-import { toast } from "@/components/ui/sonner";
+import { Send } from "lucide-react";
 
 type FormProps = {
-  onSubmit: (e: React.FormEvent<HTMLFormElement>) => void | Promise<void>;
+  onSubmit: (e: FormEvent<HTMLFormElement>) => void | Promise<void>;
+  submitting?: boolean;
   className?: string;
 };
 
-export default function Form({ onSubmit, className }: FormProps) {
-  const [submitting, setSubmitting] = useState(false);
-
+export default function Form({ onSubmit, submitting = false, className = "" }: FormProps) {
   return (
-    <section className="shadow-xl border-0 mx-auto max-w-4xl rounded-2xl bg-white p-6 ring-1 ring-black/5 md:p-8">
-      <h2 className="text-2xl font-semibold tracking-tight text-zinc-900">
-        Begär offert
-      </h2>
+    <section className={`shadow-xl border-0 mx-auto max-w-4xl rounded-2xl bg-white p-6 ring-1 ring-black/5 md:p-8 ${className}`}>
+      <h2 className="text-2xl font-semibold tracking-tight text-zinc-900">Begär offert</h2>
       <p className="mt-1 text-sm text-zinc-600">
-        Fyll i formuläret så kontaktar vi dig för att diskutera era behov och
-        utforma ett skräddarsytt förslag.
+        Fyll i formuläret så kontaktar vi dig för att diskutera era behov och utforma ett skräddarsytt förslag.
       </p>
 
       <form onSubmit={onSubmit} className="mt-6 space-y-6">
+        {/* Honeypot (bot trap) */}
+        <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" />
+
         <div className="grid gap-4 md:grid-cols-2">
           <div className="space-y-2">
             <label htmlFor="company" className="text-sm font-medium text-zinc-800">
@@ -32,7 +30,7 @@ export default function Form({ onSubmit, className }: FormProps) {
               id="company"
               name="company"
               required
-              placeholder="Era företagsnamn"
+              placeholder="Ert företagsnamn"
               className="block w-full rounded-xl border border-zinc-200 bg-white px-3.5 py-2.5 text-sm shadow-sm outline-none ring-0 placeholder:text-zinc-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20"
             />
           </div>
@@ -65,9 +63,7 @@ export default function Form({ onSubmit, className }: FormProps) {
           </div>
 
           <div className="space-y-2">
-            <label htmlFor="phone" className="text-sm font-medium text-zinc-800">
-              Telefon
-            </label>
+            <label htmlFor="phone" className="text-sm font-medium text-zinc-800">Telefon</label>
             <input
               id="phone"
               name="phone"
@@ -77,9 +73,7 @@ export default function Form({ onSubmit, className }: FormProps) {
           </div>
 
           <div className="space-y-2">
-            <label htmlFor="workshop" className="text-sm font-medium text-zinc-800">
-              Intresserad workshop
-            </label>
+            <label htmlFor="workshop" className="text-sm font-medium text-zinc-800">Intresserad workshop</label>
             <div className="relative">
               <select
                 id="workshop"
@@ -87,9 +81,7 @@ export default function Form({ onSubmit, className }: FormProps) {
                 defaultValue=""
                 className="block w-full appearance-none rounded-xl border border-zinc-200 bg-white px-3.5 py-2.5 pr-10 text-sm shadow-sm outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20"
               >
-                <option value="" disabled>
-                  Välj workshop
-                </option>
+                <option value="" disabled>Välj workshop</option>
                 <option value="marketing">AI i marknadsföring</option>
                 <option value="sales">AI i försäljning</option>
                 <option value="product">AI i produktutveckling</option>
@@ -100,9 +92,7 @@ export default function Form({ onSubmit, className }: FormProps) {
           </div>
 
           <div className="space-y-2">
-            <label htmlFor="size" className="text-sm font-medium text-zinc-800">
-              Antal anställda
-            </label>
+            <label htmlFor="size" className="text-sm font-medium text-zinc-800">Antal anställda</label>
             <div className="relative">
               <select
                 id="size"
@@ -110,9 +100,7 @@ export default function Form({ onSubmit, className }: FormProps) {
                 defaultValue=""
                 className="block w-full appearance-none rounded-xl border border-zinc-200 bg-white px-3.5 py-2.5 pr-10 text-sm shadow-sm outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20"
               >
-                <option value="" disabled>
-                  Företagsstorlek
-                </option>
+                <option value="" disabled>Företagsstorlek</option>
                 <option value="1-10">1–10</option>
                 <option value="11-50">11–50</option>
                 <option value="51-200">51–200</option>
@@ -124,9 +112,7 @@ export default function Form({ onSubmit, className }: FormProps) {
         </div>
 
         <div className="space-y-2">
-          <label htmlFor="message" className="text-sm font-medium text-zinc-800">
-            Beskriv era behov och utmaningar
-          </label>
+          <label htmlFor="message" className="text-sm font-medium text-zinc-800">Beskriv era behov och utmaningar</label>
           <textarea
             id="message"
             name="message"
@@ -136,7 +122,7 @@ export default function Form({ onSubmit, className }: FormProps) {
           />
         </div>
 
-        <div className="">
+        <div>
           <button
             type="submit"
             disabled={submitting}
@@ -146,9 +132,7 @@ export default function Form({ onSubmit, className }: FormProps) {
             <Send className="ml-2 h-4 w-4" />
           </button>
           <p className="mt-3 text-xs leading-5 text-zinc-500 text-center">
-            Genom att skicka detta formulär godkänner ni att vi kontaktar er angående
-            era förfrågan. Vi respekterar er integritet och delar aldrig era uppgifter
-            med tredje part.
+            Genom att skicka detta formulär godkänner ni att vi kontaktar er angående er förfrågan. Vi respekterar er integritet och delar aldrig era uppgifter med tredje part.
           </p>
         </div>
       </form>
