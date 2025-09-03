@@ -2,7 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, Zap } from "lucide-react";
-import heroImage from "@/assets/ai-workshop-hero.jpg";
+// import heroImage from "@/assets/ai-workshop-hero.jpg";
+import heroImage from "@/assets/hero.png";
 import Image from "next/image"
 
 const Hero = () => {
@@ -86,14 +87,14 @@ Vi hjälper företag att omsätta AI från teori till praktik. I våra AI worksh
 
           {/* Image */}
           <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+            <div className="">
               <Image
                 src={heroImage}
                 alt="Professionella AI-workshops för företag"
                 className="w-full h-auto object-cover"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+              <div className="absolute inset-0"></div>
             </div>
             
             {/* Floating Elements */}
