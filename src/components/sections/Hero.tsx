@@ -99,11 +99,11 @@ Vi hjälper företag att omsätta AI från teori till praktik. I våra AI worksh
             
             {/* Floating Elements */}
             <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground p-4 rounded-xl shadow-lg">
-              <div className="text-sm font-semibold">+300%</div>
+              <div className="text-sm font-semibold">Högre</div>
               <div className="text-xs">Effektivitet</div>
             </div>
             <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
-              <div className="text-sm font-semibold">-70%</div>
+              <div className="text-sm font-semibold">Mindre</div>
               <div className="text-xs">Tid per uppgift</div>
             </div>
           </div>
