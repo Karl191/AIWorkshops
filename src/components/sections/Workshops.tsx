@@ -43,7 +43,7 @@ const workshops = [
     title: "AI för Kundsupport",
     description: "Förbättra kundnöjdheten och effektivisera support med intelligenta lösningar.",
     icon: MessageCircle,
-    duration: "½ dag",
+    duration: "1 dag",
     topics: [
       "Chatbots och virtuella assistenter",
       "Automatisk ärendehantering",
@@ -69,7 +69,7 @@ const workshops = [
     title: "AI-strategi för Ledningsgrupper",
     description: "Utveckla en övergripande AI-strategi och förstå affärspotentialen.",
     icon: Users,
-    duration: "½ dag",
+    duration: "1 dag",
     topics: [
       "AI-mognadsbedömning",
       "ROI-kalkylering",
