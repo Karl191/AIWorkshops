@@ -76,19 +76,6 @@ export default function Contact({ isStartPage = false }: Props) {
                 </div>
               </div>
             </div>
-
-            <div className="bg-card p-6 rounded-xl border border-border">
-              <h3 className="font-semibold mb-4 flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-accent" />
-                Våra garantier
-              </h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 bg-accent rounded-full mt-2" />Kostnadsfri första konsultation (värde: 5 000 SEK)</li>
-                <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 bg-accent rounded-full mt-2" />Svar inom 24 timmar</li>
-                <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 bg-accent rounded-full mt-2" />Nöjd-kund-garanti eller pengarna tillbaka</li>
-                <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 bg-accent rounded-full mt-2" />3 månaders support efter workshop</li>
-              </ul>
-            </div>
           </div>
 
           <Form onSubmit={handleSubmit} submitting={isSubmitting} />
