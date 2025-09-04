@@ -74,9 +74,9 @@ Vi hjälper företag att omsätta AI från teori till praktik. I våra AI worksh
 
             {/* Trust Indicators */}
             <div className="pt-8 border-t border-border">
-              <p className="text-sm text-muted-foreground mb-4">
-                Över 200+ företag har redan transformerat sina processer
-              </p>
+              {/*<p className="text-sm text-muted-foreground mb-4">*/}
+              {/*  Över 200+ företag har redan transformerat sina processer*/}
+              {/*</p>*/}
               <div className="flex flex-wrap gap-8 text-sm text-muted-foreground">
                 <span>✓ Branschoberoende lösningar</span>
                 <span>✓ Praktiska resultat från dag 1</span>
