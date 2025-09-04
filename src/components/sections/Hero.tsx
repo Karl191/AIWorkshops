@@ -78,7 +78,6 @@ Vi hjälper företag att omsätta AI från teori till praktik. I våra AI worksh
                 Över 200+ företag har redan transformerat sina processer
               </p>
               <div className="flex flex-wrap gap-8 text-sm text-muted-foreground">
-                <span>✓ Certifierade AI-specialister</span>
                 <span>✓ Branschoberoende lösningar</span>
                 <span>✓ Praktiska resultat från dag 1</span>
               </div>
