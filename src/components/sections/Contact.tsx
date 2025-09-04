@@ -65,16 +65,6 @@ export default function Contact({ isStartPage = false }: Props) {
                   <div className="text-muted-foreground">info@aiworkshops.se</div>
                 </div>
               </div>
-
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-accent-muted rounded-lg">
-                  <Clock className="h-5 w-5 text-accent" />
-                </div>
-                <div>
-                  <div className="font-semibold">Öppettider</div>
-                  <div className="text-muted-foreground">Mån–Fre: 09:00–17:00<br />Helger: Stängt</div>
-                </div>
-              </div>
             </div>
           </div>
 

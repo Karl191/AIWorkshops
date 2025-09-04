@@ -141,13 +141,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="pt-4 border-t border-primary-foreground/20">
-              <p className="text-xs text-primary-foreground/60">
-                Vardagar: 09:00 - 17:00<br />
-                Helger: Stängt
-              </p>
-            </div>
           </div>
         </div>
 
