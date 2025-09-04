@@ -86,7 +86,7 @@ export default function Form({ onSubmit, submitting = false, className = "" }: F
                 <option value="sales">AI i försäljning</option>
                 <option value="product">AI i produktutveckling</option>
                 <option value="admin">AI i administration</option>
-                <option value="custom">Anpassat</option>
+                <option value="custom">Anpassad workshop</option>
               </select>
               <ChevronDown />
             </div>
