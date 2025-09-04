@@ -13,11 +13,6 @@ export default function GAProvider() {
       ? `${pathname}?${searchParams.toString()}`
       : pathname || '/';
     pageview(url);
-    if (process.env.NODE_ENV !== 'production') {
-      // dev logger
-      // eslint-disable-next-line no-console
-      console.log('[GA] page_view', url);
-    }
   }, [pathname, searchParams]);
 
   return null;
