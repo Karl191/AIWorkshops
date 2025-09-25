@@ -1,23 +1,18 @@
 import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import Script from 'next/script';
-import GAProvider from './ga-provider';
-import { Toaster } from '@/components/ui/sonner';
+import type {Metadata} from 'next';
+import {Inter} from 'next/font/google';
+import {Toaster} from '@/components/ui/sonner';
 import Header from '@/components/sections/Header';
+import {GoogleAnalytics} from '@next/third-parties/google';
 
-const inter = Inter({ subsets: ['latin'] });
-
-const gaId = process.env.NEXT_PUBLIC_GA_ID;
-const enableGA =
-  !!gaId && (process.env.NODE_ENV === 'production' || process.env.NEXT_PUBLIC_ENABLE_GA_DEV === 'true');
+const inter = Inter({subsets: ['latin']});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aiworkshops.se'),
   title: 'AI workshops för företag | Träning i AI för ert team',
   description:
     'Boka AI workshops för företag. Vi tränar ert team i att använda AI för marknadsföring, försäljning, produktutveckling och administration – med resultat som märks.',
-  alternates: { canonical: 'https://aiworkshops.se' },
+  alternates: {canonical: 'https://aiworkshops.se'},
   openGraph: {
     title: 'AI workshops för företag | Träning i AI för ert team',
     description:
@@ -25,7 +20,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: '/',
     siteName: 'AI Workshops',
-    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    images: [{url: '/og-image.png', width: 1200, height: 630}],
   },
   twitter: {
     card: 'summary_large_image',
@@ -36,45 +31,21 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+      {url: '/favicon.ico'},
+      {url: '/favicon-32.png', type: 'image/png', sizes: '32x32'},
     ],
-    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+    apple: [{url: '/apple-touch-icon.png', sizes: '180x180'}],
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="sv">
-    <head>
-      {enableGA ? (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-            strategy="afterInteractive"
-          />
-          <Script id="ga-init" strategy="afterInteractive">
-            {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('consent', 'default', {
-                  ad_storage: 'denied',
-                  ad_user_data: 'denied',
-                  ad_personalization: 'denied',
-                  analytics_storage: 'denied'
-                });
-                gtag('js', new Date());
-                gtag('config', '${gaId}', { send_page_view: false });
-              `}
-          </Script>
-        </>
-      ) : null}
-    </head>
     <body className={inter.className}>
-    {enableGA ? <GAProvider /> : null}
-    <Header />
+    <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!}/>
+    <Header/>
     {children}
-    <Toaster position="bottom-right" />
+    <Toaster position="bottom-right"/>
     </body>
     </html>
   );
