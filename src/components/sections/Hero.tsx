@@ -33,7 +33,7 @@ const Hero = () => {
                 för företag och organisationer
               </h1>
               <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl">
-Vi hjälper företag att omsätta AI från teori till praktik. I våra AI workshops får ert team träning i hur AI kan stärka marknadsföring, försäljning, produktutveckling och administration – med fokus på resultat som märks i verksamheten.
+                Vi hjälper företag att omsätta AI från teori till praktik. Våra AI workshops är utformade för att skapa värde i er organisation oavsett bransch, avdelning eller tidigare kunskapsnivå – med fokus på resultat som märks i verksamhetens vardag.
               </p>
             </div>
 
@@ -43,7 +43,7 @@ Vi hjälper företag att omsätta AI från teori till praktik. I våra AI worksh
                 <div className="p-2 bg-accent-muted rounded-lg">
                   <Zap className="h-5 w-5 text-accent" />
                 </div>
-                <span className="font-medium">Snabbare processer</span>
+                <span className="font-medium">Högre effektivitet</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="p-2 bg-accent-muted rounded-lg">
@@ -79,7 +79,8 @@ Vi hjälper företag att omsätta AI från teori till praktik. I våra AI worksh
               {/*</p>*/}
               <div className="flex flex-wrap gap-8 text-sm text-muted-foreground">
                 <span>✓ Branschoberoende lösningar</span>
-                <span>✓ Praktiska resultat från dag 1</span>
+                <span>✓ Praktiska tillämpningar från dag 1</span>
+                <span>✓ Uppföljning och rådgivning</span>
               </div>
             </div>
           </div>
