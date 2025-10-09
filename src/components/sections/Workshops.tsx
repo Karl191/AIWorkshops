@@ -109,7 +109,7 @@ const Workshops = () => {
             Våra <span className="text-accent">AI-Workshops</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Praktiska, handson-workshops som ger era team konkreta färdigheter 
+            Vårt löfte: Praktiska, handson-workshops som ger era team konkreta färdigheter 
             att implementera AI-verktyg i vardagliga arbetsprocesser.
           </p>
         </div>
