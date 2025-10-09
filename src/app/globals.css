@@ -152,3 +152,81 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-accent-glow);
   }
 }
+
+/* TOAST */
+/* Toast notification styling to match website theme */
+[data-sonner-toast] {
+    background: white !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    padding: 16px !important;
+}
+
+/* Success toast - using your accent color */
+[data-sonner-toast][data-type="success"] {
+    background: #f97316 !important;
+    border-color: #f97316 !important;
+    color: white !important;
+}
+
+[data-sonner-toast][data-type="success"] [data-title] {
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+[data-sonner-toast][data-type="success"] [data-description] {
+    color: rgba(255, 255, 255, 0.95) !important;
+    opacity: 1 !important;
+}
+
+[data-sonner-toast][data-type="success"] [data-icon] {
+    color: white !important;
+}
+
+/* Error toast - red theme */
+[data-sonner-toast][data-type="error"] {
+    background: #ef4444 !important;
+    border-color: #ef4444 !important;
+    color: white !important;
+}
+
+[data-sonner-toast][data-type="error"] [data-title] {
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+[data-sonner-toast][data-type="error"] [data-description] {
+    color: rgba(255, 255, 255, 0.95) !important;
+    opacity: 1 !important;
+}
+
+[data-sonner-toast][data-type="error"] [data-icon] {
+    color: white !important;
+}
+
+/* Default toast styling */
+[data-sonner-toast] [data-title] {
+    font-weight: 600 !important;
+    font-size: 0.875rem !important;
+    color: #18181b !important;
+}
+
+[data-sonner-toast] [data-description] {
+    font-size: 0.8125rem !important;
+    color: #52525b !important;
+    opacity: 1 !important;
+    margin-top: 4px !important;
+}
+
+/* Close button styling */
+[data-sonner-toast] [data-close-button] {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-radius: 6px !important;
+}
+
+[data-sonner-toast][data-type="success"] [data-close-button],
+[data-sonner-toast][data-type="error"] [data-close-button] {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}

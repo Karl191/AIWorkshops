@@ -1,19 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
-import { Mail, Clock, CheckCircle } from "lucide-react";
+import { toast } from "sonner";
+import { Mail } from "lucide-react";
 import Form from "@/components/sections/Form";
 
 type Props = { isStartPage?: boolean };
 
 export default function Contact({ isStartPage = false }: Props) {
-  const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.currentTarget; // keep a stable ref
+    const form = e.currentTarget;
     setIsSubmitting(true);
 
     const data = Object.fromEntries(new FormData(form));
@@ -26,16 +25,17 @@ export default function Contact({ isStartPage = false }: Props) {
       });
 
       if (res.ok) {
-        toast({ title: "Tack för din förfrågan!", description: "Vi hör av oss inom kort." });
-        form.reset(); // safe now
+        console.log('yes')
+        toast.success("Tack för din förfrågan!", { description: "Vi hör av oss inom kort." });
+        form.reset();
       } else {
         const err = await res.text();
         console.error(err);
-        toast({ title: "Något gick fel", description: "Försök igen eller maila oss direkt." });
+        toast.error("Något gick fel", { description: "Försök igen eller maila oss direkt." });
       }
     } catch (err) {
       console.error(err);
-      toast({ title: "Nätverksfel", description: "Kontrollera din uppkoppling och försök igen." });
+      toast.error("Nätverksfel", { description: "Kontrollera din uppkoppling och försök igen." });
     } finally {
       setIsSubmitting(false);
     }
