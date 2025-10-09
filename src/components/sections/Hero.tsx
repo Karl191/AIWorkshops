@@ -77,9 +77,9 @@ const Hero = () => {
               {/*<p className="text-sm text-muted-foreground mb-4">*/}
               {/*  Över 200+ företag har redan transformerat sina processer*/}
               {/*</p>*/}
-              <div className="flex flex-wrap gap-8 text-sm text-muted-foreground">
+              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                 <span>✓ Branschoberoende lösningar</span>
-                <span>✓ Praktiska tillämpningar från dag 1</span>
+                <span>✓ Praktiska tillämpningar</span>
                 <span>✓ Uppföljning och rådgivning</span>
               </div>
             </div>
