@@ -62,7 +62,9 @@ export default function Contact({ isStartPage = false }: Props) {
                 </div>
                 <div>
                   <div className="font-semibold">E-post</div>
-                  <div className="text-muted-foreground">info@aiworkshops.se</div>
+                  <a href="mailto:info@aiworkshops.se" className="text-muted-foreground hover:text-accent transition-colors">
+                    info@aiworkshops.se
+                  </a>
                 </div>
               </div>
             </div>
